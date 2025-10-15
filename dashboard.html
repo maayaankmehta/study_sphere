@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudySphere Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-mode">
+
+  <!-- Top Navbar -->
+  <nav class="top-nav glass">
+    <div class="nav-left">
+      <img src="studysphere-logo.png" alt="Logo" class="logo" />
+      <span class="brand">StudySphere</span>
+    </div>
+
+    <div class="nav-center">
+      <input type="text" placeholder="Search Study Groups, Topics..." class="search-bar" />
+    </div>
+
+    <div class="nav-right">
+      <button class="icon-btn"><i data-lucide="bell"></i></button>
+      <button class="icon-btn"><i data-lucide="message-square"></i></button>
+      <div class="profile">
+        <img src="user-avatar.jpg" alt="User" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar glass">
+      <h3>Trending Groups</h3>
+      <div class="group">
+        <img src="group1.jpg" alt="Group 1" />
+        <div>
+          <h4>Advanced Python</h4>
+          <p>4.2k members</p>
+        </div>
+      </div>
+      <div class="group">
+        <img src="group2.jpg" alt="Group 2" />
+        <div>
+          <h4>Machine Learning 101</h4>
+          <p>2.8k members</p>
+        </div>
+      </div>
+      <div class="group">
+        <img src="group3.jpg" alt="Group 3" />
+        <div>
+          <h4>AI Research Forum</h4>
+          <p>1.9k members</p>
+        </div>
+      </div>
+
+      <h3>Upcoming Sessions</h3>
+      <div class="session">
+        <p><strong>Data Science Jam</strong></p>
+        <span>Today • 6:00 PM</span>
+      </div>
+      <div class="session">
+        <p><strong>React Deep Dive</strong></p>
+        <span>Tomorrow • 5:00 PM</span>
+      </div>
+    </aside>
+
+    <!-- Main Feed -->
+    <main class="feed">
+      <div class="create-post glass">
+        <img src="user-avatar.jpg" alt="User" />
+        <input type="text" placeholder="Share your progress or start a discussion..." />
+        <button class="primary-btn">Post</button>
+      </div>
+
+      <div class="post glass">
+        <div class="post-header">
+          <img src="user1.jpg" alt="User" />
+          <div>
+            <h4>@mayank_dev</h4>
+            <span>2 hours ago</span>
+          </div>
+        </div>
+        <p>Finally completed my neural network mini-project! 💪 Anyone else training models tonight?</p>
+        <div class="post-actions">
+          <button><i data-lucide="arrow-up"></i></button>
+          <button><i data-lucide="message-circle"></i></button>
+          <button><i data-lucide="share-2"></i></button>
+        </div>
+      </div>
+
+      <div class="post glass">
+        <div class="post-header">
+          <img src="user2.jpg" alt="User" />
+          <div>
+            <h4>@sophia_ai</h4>
+            <span>4 hours ago</span>
+          </div>
+        </div>
+        <p>📘 Study Group: “Data Visualization with Python” starting soon! DM if you want the invite link.</p>
+        <div class="post-actions">
+          <button><i data-lucide="arrow-up"></i></button>
+          <button><i data-lucide="message-circle"></i></button>
+          <button><i data-lucide="share-2"></i></button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="rightbar glass">
+      <h3>Your Stats</h3>
+      <div class="stat-card">
+        <h4>XP</h4>
+        <p>1,240</p>
+      </div>
+      <div class="stat-card">
+        <h4>Streak</h4>
+        <p>12 days 🔥</p>
+      </div>
+      <div class="stat-card">
+        <h4>Groups Joined</h4>
+        <p>8</p>
+      </div>
+
+      <h3>Quick Links</h3>
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+      <a href="#">Help Center</a>
+    </aside>
+  </div>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
